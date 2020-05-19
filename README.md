@@ -1,7 +1,4 @@
-# CS-539-Machine-Learning-Driver-Activity-Recognition
-# Driver Activity Recognition using Machine Learning and Deep Learning Techniques
-
-## Overview
+# Machine-Learning-Distracted-Driver-Detection
 
 ### Introduction
 Most people tend to follow safety guidelines while driving, yet there is a continuous increase in car accidents every year leading to loss of lives. One major factor that contributes towards the accidents is the driver distractions while driving. Current distracted driving statistics show that 80% of all car accidents are caused by the driver being  distracted in some way. Thus, to reduce the number of car accidents, being able to identify distracted driving is a major task.
@@ -26,8 +23,6 @@ various features using:
 
 • Sobel Edge Descriptor
 
-• Clustering
-
 #### 1. Pixels:
 Each image’s pixels is flattened into a column vector of size 64X64X3. We then combined the vectors for each of the data instances and created a matrix as the input data to our models.
 
@@ -42,12 +37,6 @@ Count occurrences of gradient orientation in localized portions. Stacked all the
 Obtained edges using Sobel gradient in X and Y direction. Then computed the resultant gradient. Stacked all the object edges as feature vector then combined the vectors for each of the data instances and created a matrix
 
 <img src="Images/Sobel%E2%80%8B.png">
-
-#### 4. K Means Clustering:
-
-Resize image to 64x64 RGB image. To reduce the number of features we decided to create a clusters. Hence, implement K means clustering on each image with K=3, middle image (in our case). Stack cluster fe atures to create feature matrix.
-
-<img src="Images/clustering.jpg">
 
 ### Machine Learning Algorithms
 
@@ -85,7 +74,6 @@ Our models are applicable to the following applications and many more
 2.  In semi-autonomous vehicles, the vehicle can take control if the driver is distracted.
 3.  Auto Insurance companies can use these models in re-writing auto policies.
 
-[`Image Source`]
 
 [`Image Source`]: http://cs229.stanford.edu/proj2019spr/report/24.pdf
 [`Dataset`]: https://www.kaggle.com/c/state-farm-distracted-driver-detection/data
